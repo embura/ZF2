@@ -1,0 +1,36 @@
+<div class="body">
+    <h3>Listar Funcionário</h3>
+    <table class="table  table-striped table-bordered table-condensed" id="lista">
+        <tr>
+            <th>NOME</th>
+            <th>CPF</th>
+            <th>SALÁRIO</th>
+            <th>EDITAR</th>
+            <th>EXCLUIR</th>
+        </tr>
+        <?php
+        foreach ($this->lista as $f):
+            ?>
+            <tr>
+                <td><?php echo $f->getNome(); ?>
+                </td>
+                <td><?php echo $f->getCpf(); ?>
+                </td>
+                <td><?php echo $f->getSalario(); ?></td>
+                <td>
+                    <a href="<?php echo $this->url('rota2', array( 'action' => 'editar', 'id' => $f->getId() )); ?>">
+                        Editar
+                    </a>
+                </td>
+                <td>
+                    <a href="<?php echo $this->url('rota2', array( 'action' => 'excluir', 'id' => $f->getId() )); ?>">
+                        Excluir
+                    </a>
+                </td>
+
+            </tr>
+        <?php endforeach; ?>
+    </table> <a href="<?php echo $this->url('home'); ?>">Voltar</a>
+
+
+<div>

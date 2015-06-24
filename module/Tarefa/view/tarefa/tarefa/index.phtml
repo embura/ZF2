@@ -1,0 +1,48 @@
+
+<h3>Adicionar Tarefa</h3>
+
+
+<form role="form" method="post" class="form-horizontal">
+
+
+    <div class="form-group">
+        <label for="nome" class="control-label">Nome</label>
+        <div class="col-sm-13">
+            <input type="text" name="nome" placeholder="Nome" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="descricao" class="control-label" >Descrição</label>
+        <div class="col-sm-13">
+            <textarea type="text" name="descricao" row="8" cols="50" placeholder="Descricao"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <div class="col-sm-13">
+            <label for="ativo" class="control-label" >Ativo</label>
+            <input type="checkbox" name="ativo" required></textarea>
+        </div>
+
+        <label for="dataFinalizacao" class="control-label">Data Finalização</label>
+        <div class="controls">
+            <input type="date" name="dataFinalizacao"  required>
+        </div>
+    </div>
+
+    <input type="submit" value="Adicionar" class="bnt btn-default">
+
+
+</form>
+
+<p>
+    <?php echo $this->resp; ?>
+</p>
+<p>
+
+</p>
+
+
+

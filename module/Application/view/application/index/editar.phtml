@@ -1,0 +1,25 @@
+<h3>Editar Funcionário</h3>
+<div class="container">
+    <div>
+        <form role="form" method="POST" class="form-group" >
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" value="<?php echo $this->funcionario->getNome(); ?>">
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="number"class="form-control" name="cpf" value="<?php echo $this->funcionario->getCpf(); ?>">
+            </div>
+
+            <div class="form-group">
+                <label for="salario">Slário</label>
+                <input type="number" class="form-control" name="salario" value="<?php echo $this->funcionario->getSalario(); ?>"> <br><br>
+            </div>
+
+            <input type="submit" value="Editar" class="bnt btn-default" >
+        </form>
+    </div>
+</div>
+<br><br>
+<a href="<?php echo $this->url('application/default', $this->c); ?>">Listar Funcionario</a>
+
