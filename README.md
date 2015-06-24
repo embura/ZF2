@@ -1,2 +1,2 @@
 # ZF2
-Projento Usando Zend 2
+Projeto Usando Zend 2
